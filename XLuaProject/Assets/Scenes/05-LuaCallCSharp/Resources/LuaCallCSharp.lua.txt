@@ -1,0 +1,18 @@
+﻿--构造游戏物体，new对象
+--CS.UnityEngine.GameObject("new by lua")
+
+print(CS.UnityEngine.Time.deltaTime)
+
+CS.UnityEngine.Time.timeScale = 0.5
+
+local gameObject = CS.UnityEngine.GameObject
+
+local camera = gameObject.Find("Main Camera")
+
+camera.name = "update by lua"
+--调用成员方法的时候，使用冒号
+local cameraCom= camera.GetComponent(camera,"Camera")
+
+gameObject.Destroy(cameraCom)
+
+local light = gameObject.Find("Direction Light")

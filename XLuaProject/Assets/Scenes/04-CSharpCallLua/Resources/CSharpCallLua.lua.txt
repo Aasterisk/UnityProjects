@@ -1,0 +1,15 @@
+﻿a = 100.1
+str = "siki"
+isDie = false
+
+person = {
+	name="siki",age=100,12,2,2,2,2,"siki",true,3.3,
+	eat=function(self,a,b)
+		print(a+b)
+	end
+}
+
+function add(a,b)
+	print(a+b)
+	return a+b,a,b
+end
